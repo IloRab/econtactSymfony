@@ -1,0 +1,14 @@
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+#contacts h2 {
+    flex-basis: 100%;
+}
+
+#contacts .contact {
+    border: 2px solid black;
+    padding: 1em;
+}

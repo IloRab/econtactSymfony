@@ -1,0 +1,24 @@
+{% extends 'base.html.twig'%}
+
+{% block title %}
+	Acceuil
+{% endblock %}
+
+{%block body%}
+
+	<h2> Bienvenue M.{{ nom }} </h2>
+
+	<section id="contacts">
+        <h2>Vos contacts</h2>
+        {% for contact in contacts %}
+            <article class="contact">
+                <h3>{{ contact.nom }}</h3>
+                {{ contact.prenom }}
+                {{ contact.email }}
+            </article>
+        {% else %}
+                Vous n'avez pas de contacts !
+        {% endfor %}
+    </section> 
+
+{%endblock%}

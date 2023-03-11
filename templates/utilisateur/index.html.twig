@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+    {% if error_message is defined %}
+        <p style="color:red"> {{ error_message }} <p>
+    {% endif %}
+    {{ form(form) }}
+{% endblock %}
